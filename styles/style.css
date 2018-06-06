@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Brown Regular";
+  src: url("brown/lineto-brown-regular.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Brown Light";
+  src: url("brown/lineto-brown-light.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Brown Bold";
+  src: url("brown/lineto-brown-bold.woff") format("woff");
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+input[type="text"] {
+  display: block;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+label {
+  display: block;
+}
+body {
+  background-color: white;
+  font-family: "Brown Regular";
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.boxing,
+.container,
+.view {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container {
+  position: relative;
+  padding: 0 0.75em;
+}
+.view {
+  position: relative;
+  padding: 0 5.55555556%;
+}
+.app-container {
+  position: relative;
+  width: 37.5em;
+  height: 22.5em;
+  background-color: #14803425;
+  margin: 7.5em auto;
+  padding-top: 4.5em;
+}
+.app-container .note-container {
+  position: relative;
+  width: 70%;
+  height: 4.5em;
+  background-color: white;
+  margin: 0 auto;
+}
+.app-container .note-container .note {
+  float: left;
+  width: 10%;
+  height: 100%;
+  margin-left: 3.75%;
+  text-align: center;
+  cursor: pointer;
+}
+.app-container .note-container .note1 {
+  position: relative;
+  background-color: #DB822B;
+}
+.app-container .note-container .note2 {
+  position: relative;
+  background-color: #5DB64D;
+}
+.app-container .note-container .note3 {
+  background-color: #B053A4;
+}
+.app-container .note-container .note4 {
+  background-color: #B2463E;
+}
+.app-container .note-container .note5 {
+  background-color: #5B99B2;
+}
+.app-container .note-container .note6 {
+  background-color: #755DB7;
+}
+.app-container .note-container .note7 {
+  background-color: #848484;
+}
+.app-container .links {
+  position: relative;
+  width: 15%;
+  height: 1.5em;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+}
+.app-container .links .link {
+  float: left;
+  width: 25%;
+  height: 100%;
+  outline: 1px solid grey;
+  text-align: center;
+  opacity: 0.7;
+}
+.app-container .links .link button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.app-container .note-slot {
+  position: relative;
+  width: 70%;
+  height: 4.5em;
+  margin: 1.5em auto;
+  background-color: white;
+}
+.app-container .add-button {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  border: 1.5px solid #9C9C9C;
+  background-color: #E1E1E1;
+  border-radius: 100%;
+  right: 1.5em;
+  bottom: 12em;
+  color: #9C9C9C;
+}
+.app-container .controls {
+  position: relative;
+  width: 50%;
+  height: 3em;
+  background-color: white;
+  margin: auto;
+}
+.app-container .controls .control {
+  float: left;
+  width: 14.3%;
+  height: 100%;
+  margin-left: 4.75%;
+  font-size: 0.7em;
+  text-align: center;
+  opacity: 0.75;
+  cursor: pointer;
+}
+.app-container .controls .rewind {
+  position: relative;
+  background: url("../icon/rewind.png") center no-repeat;
+  background-size: cover;
+}
+.app-container .controls .play {
+  position: relative;
+  background: url("../icon/play-button.png") center no-repeat;
+  background-size: 60%;
+}
+.app-container .controls .fast {
+  position: relative;
+  background: url("../icon/forward.png") center no-repeat;
+  background-size: cover;
+}
+.app-container .controls .stop {
+  position: relative;
+  background: url("../icon/stop.png") center no-repeat;
+  background-size: 60%;
+}
+.app-container .controls .loop {
+  position: relative;
+  background: url("../icon/loop.png") center no-repeat;
+  background-size: 60%;
+}
